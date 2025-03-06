@@ -1,0 +1,21 @@
+.footerr{
+    font-family: "Poppins", sans-serif;
+}
+.fd{
+    background-image: url("https://res.cloudinary.com/dozr5pfwt/image/upload/v1739852438/lry7ksdnztimligkk90c.png");
+    background-size: cover;
+
+    background-color: #3A9E1E;
+}
+.customRow{
+    display: flex;
+    justify-content: flex-start; 
+    gap: 50px;
+
+    
+}
+.sr{
+    font-size: 20px;
+    /* color: black; */
+
+}

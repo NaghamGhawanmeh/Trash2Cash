@@ -1,0 +1,136 @@
+.categoryPage{
+    width:100%;
+    /* min-height: 1500px; */
+    height: 1700px;
+}
+.categorySection{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap:2%;
+    margin-top: 3%;
+    position: relative;
+    right: 5%;
+    left: 5%;
+}
+.img1{
+    width: 30rem;
+    height:30rem;
+}
+.p1{
+    background-color: #14A44D;
+}
+.section1{
+    margin-top: 5%;
+    gap: 3%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 10%;
+    left: 10%;
+}
+.catElement{
+    padding: 2%;
+    border-radius: 2% ;
+    width:80%;
+    height: 100%;
+    cursor: pointer;
+    border: transparent;
+}
+.categoryImg{
+    width: 12rem;
+    height: 12rem;
+}
+
+.title-1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.description-1{
+    font-size: 1.5rem;
+}
+.pre-category{
+    width: 100%;
+}
+.header-category{
+    margin-top: 3%;
+    justify-items: center;
+    background-color: gray;
+}
+.btn {
+    width: 50%;
+}
+.img{
+    width: 20%;
+    height: 20%;
+}
+.Page{
+    background-color: #D2D1CF;
+    padding: 1%;
+    font-size: 15px;
+
+    height: 100%;
+}
+ .reqSection, .card1 , .reqSection{
+    position: relative;
+    left: 5%;
+    right: 5%;
+    margin-top: 1%;
+
+  
+}
+.card1{
+    height: 20%;
+
+}
+.form1{
+    font-size: 2rem;
+    background-color: #14A44D;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+}
+.l1{
+    width: 100%;
+    height: 100%;
+}
+input{
+    background-color: aliceblue;
+}
+.btn1{
+    color:#14A44D;
+    background-color: aliceblue;
+}
+.page1{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+    row-gap: 3%;
+    column-gap: 3%;
+    padding: 5%;
+}
+.img2{
+    height:19rem;
+    width: 20rem;
+}
+.reqSection{
+    display: flex;
+    gap: 2%;
+}
+.footer{
+    width: 70%;
+    height: 10%;
+}
+.price{
+    color: #D2D1CF;
+    font-size: 1rem;
+    initial-letter: .5rem;
+}
+/* ********************** */
+.p2{
+    font-family: 'Poppins', sans-serif;
+}

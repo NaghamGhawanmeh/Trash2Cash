@@ -1,0 +1,93 @@
+.user-home-page {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  font-family: 'Ramus Light', sans-serif;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  font-size: 30px;
+
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  height:600px ;
+
+}
+
+#CategoryTitle {
+  justify-self: center;
+  font-size: 60px;
+  font-weight: bold;
+  /* margin-top: 1px; */
+  font-family:'Fraunces', serif;
+  margin-bottom: 50px;
+}
+
+.category {
+  flex: 1 1 calc(20% - 45px);
+  max-width: 20%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* font-size: 50px; */
+
+}
+
+.categories .category:nth-child(n+6) {
+  flex: 1 1 calc(25% - 45px);
+  max-width: 20%; 
+}
+
+.category img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out; 
+}
+
+.category img:hover {
+  transform: scale(1.1); 
+}
+
+.category h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+}
+
+
+.background-video{
+  border-right:1px solid #f7ffee;
+  border-bottom: 1px solid #14A44D;
+}
+.categ{
+  font-size: 25px !important;
+}
+.recycling-subtitle{
+  color: #3a9e1e;
+  font-size: 30px;
+  /* font-weight: 600; */
+  text-transform: uppercase;
+  /* margin-bottom: 0.5rem; */
+  font-family: 'Poppins', sans-serif;
+
+}

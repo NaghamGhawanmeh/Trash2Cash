@@ -1,0 +1,14 @@
+
+
+.MuiContainer-root{
+  /* background-color: rgb(255, 255, 180); */
+  width: 100vw;
+  /* padding: 20px; */
+  /* flex-grow: 1; */
+  font-size: 25px;
+}
+
+.gridBox{
+  width: 80vw;
+
+}

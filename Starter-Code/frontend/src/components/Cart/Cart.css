@@ -1,0 +1,127 @@
+/* .cart-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  
+  @media (min-width: 900px) {
+    .cart-container {
+      flex-direction: row;
+    }
+  }
+  
+  .cart-left {
+    flex: 1;
+    padding: 3rem;
+    background-color: #ffffff;
+  }
+  
+  @media (min-width: 900px) {
+    .cart-left {
+      border-right: 1px solid #e0e0e0;
+    }
+  }
+  
+  .cart-header {
+    font-weight: bold;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
+  .cart-header-icon {
+    margin-right: 1.5rem;
+    color: #4caf50;
+  }
+  
+  .cart-empty-message {
+    text-align: center;
+    color: #666;
+    font-size: 1.5rem;
+  }
+  
+  .cart-item {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-item-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cart-item-detail {
+    color: #666;
+    font-size: 1.4rem;
+  }
+  
+  .cart-item-price {
+    margin-top: 1.5rem;
+    color: #4caf50;
+    font-size: 2rem;
+  }
+  
+  .cart-right {
+    width: 100%;
+    padding: 3rem;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    bottom: 0;
+  }
+  
+  @media (min-width: 900px) {
+    .cart-right {
+      width: 450px;
+      box-shadow: none;
+      position: static;
+    }
+  }
+  
+  .cart-right-title {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+  }
+  
+  .cart-location-input {
+    margin-bottom: 2rem;
+  }
+  
+  .cart-order-summary {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .cart-subtotal {
+    font-size: 1.6rem;
+  }
+  
+  .cart-free-delivery {
+    color: #666;
+    font-size: 1.4rem;
+  }
+  
+  .cart-checkout-button {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #318235;
+    font-size: 1.6rem;
+  }
+  
+  .cart-checkout-button:hover {
+    background-color: #318235;
+  }
+  
+  .cart-notes {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+    font-size: 1.4rem;
+  } */

@@ -1,0 +1,85 @@
+.recycling-container {
+    width: 100%;
+    /* background: url('../../assets/bg.png') no-repeat center/cover; */
+    padding: 4rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .recycling-header {
+    margin-bottom: 2rem;
+  }
+  
+  .recycling-subtitle {
+    color: #3a9e1e;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .recycling-title {
+    font-size: 50px;
+    font-weight: 700;
+    /* color: #0e1d40; */
+    font-family: 'Fraunces', serif;
+  }
+  
+  .recycling-steps-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .recycling-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icon-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .icon-circle {
+    background-color: #3a9e1e;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border:3px solid #3a9e1e !important;
+  }
+  
+  .icon-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .step-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0e1d40;
+    margin-bottom: 0.5rem;
+  }
+  
+  .step-description {
+    font-size: 1.5rem;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .recycling-steps-desktop {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+  
