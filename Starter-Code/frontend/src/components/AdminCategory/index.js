@@ -29,7 +29,7 @@ const AdminCategory = () => {
 
   useEffect(() => {
     axios
-      .get("https://trash2cash-liav.onrender.com/category/getAllCategories")
+      .get("http://localhost:5000/category/getAllCategories")
       .then((response) => {
         dispatch(setCategories(response.data.Categories));
       })
@@ -53,7 +53,7 @@ const AdminCategory = () => {
     };
 
     axios
-      .post("https://trash2cash-liav.onrender.com/category/addCategory", categoryData)
+      .post("http://localhost:5000/category/addCategory", categoryData)
       .then((response) => {
         dispatch(addCategory(categoryData));
         setNewCategory({
@@ -73,7 +73,7 @@ const AdminCategory = () => {
 
   const handleDeleteCategory = (categoryId) => {
     axios
-      .delete(`https://trash2cash-liav.onrender.com/category/${categoryId}`)
+      .delete(`http://localhost:5000/category/${categoryId}`)
       .then(() => {
         dispatch(deleteCategory(categoryId));
       })
@@ -94,7 +94,7 @@ const AdminCategory = () => {
     };
 
     axios
-      .put(`https://trash2cash-liav.onrender.com/category/${editedCategory.id}`, updatedData)
+      .put(`http://localhost:5000/category/${editedCategory.id}`, updatedData)
       .then((response) => {
         dispatch(updateCategory({ id: editedCategory.id, updatedData }));
         cancelEdit();

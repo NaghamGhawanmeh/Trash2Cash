@@ -32,7 +32,7 @@ const Auth = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://trash2cash-liav.onrender.com/user/login", {
+      const response = await axios.post("http://localhost:5000/user/login", {
         email,
         password,
       });
@@ -54,7 +54,7 @@ const Auth = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://trash2cash-liav.onrender.com/user/register", {
+      const response = await axios.post("http://localhost:5000/user/register", {
         first_name: firstName,
         last_name: lastName,
         phone_number: phoneNumber,
@@ -190,7 +190,7 @@ const Auth = () => {
                   onSuccess={(response) => {
                     const body = jwtDecode(response.credential);
                     axios
-                      .post("https://trash2cash-liav.onrender.com/auth/google", body)
+                      .post("http://localhost:5000/auth/google", body)
                       .then((result) => {
                         console.log("tttt", result);
                         dispatch(

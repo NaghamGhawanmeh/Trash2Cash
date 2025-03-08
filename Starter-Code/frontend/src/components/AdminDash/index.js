@@ -18,7 +18,7 @@ const AdminDash = () => {
   const orders = useSelector((reducers) => reducers.adminOrdersReducer.orders);
   const getAllOrders = () => {
     axios
-      .get("https://trash2cash-liav.onrender.com/admin/getAllOrders")
+      .get("http://localhost:5000/admin/getAllOrders")
       .then((result) => {
         console.log(result);
         dispatch(setOrders(result.data.orders));
@@ -30,7 +30,7 @@ const AdminDash = () => {
   };
   const assignOrderToCollector = (id) => {
     axios
-      .put(`https://trash2cash-liav.onrender.com/admin/chooseCollector/${id}`, {
+      .put(`http://localhost:5000/admin/chooseCollector/${id}`, {
         collector_id: Number(collector_id),
       })
       .then((result) => {
@@ -44,7 +44,7 @@ const AdminDash = () => {
   };
   const changeOrderStatusById = (id) => {
     axios
-      .put(`https://trash2cash-liav.onrender.com/admin/changeOrderStatusById/${id}`, {
+      .put(`http://localhost:5000/admin/changeOrderStatusById/${id}`, {
         status: String(status),
       })
       .then((result) => {

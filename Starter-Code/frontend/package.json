@@ -6,7 +6,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "install": "npm install --legacy-peer-deps",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -67,10 +66,7 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.10"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "main": "index.js",
   "keywords": [],

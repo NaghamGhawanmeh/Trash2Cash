@@ -141,7 +141,7 @@ export default function DashboardLayoutBasic(props) {
   ];
   const getAllOrders = () => {
     axios
-      .get("https://trash2cash-liav.onrender.com/admin/getAllOrders")
+      .get("http://localhost:5000/admin/getAllOrders")
       .then((result) => {
         console.log(result);
         dispatch(setOrders(result.data.orders));
@@ -154,7 +154,7 @@ export default function DashboardLayoutBasic(props) {
   //==============================================================
   const getAssignedOrdersById = () => {
     axios
-      .get(`https://trash2cash-liav.onrender.com/user/getAssignOrderById`, {
+      .get(`http://localhost:5000/user/getAssignOrderById`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
@@ -332,7 +332,7 @@ export default function DashboardLayoutBasic(props) {
     if (newRow.status) {
       try {
         const result = await axios.put(
-          `https://trash2cash-liav.onrender.com/admin/changeOrderStatusById/${newRow.id}`,
+          `http://localhost:5000/admin/changeOrderStatusById/${newRow.id}`,
           { status: newRow.status }
         );
 
@@ -347,7 +347,7 @@ export default function DashboardLayoutBasic(props) {
       const collector_id = collectorMap[newRow.collector];
       try {
         const result = await axios.put(
-          `https://trash2cash-liav.onrender.com/admin/chooseCollector/${newRow.id}`,
+          `http://localhost:5000/admin/chooseCollector/${newRow.id}`,
           { collector_id: collector_id }
         );
         dispatch(setCollector(result.data.order));
@@ -359,7 +359,7 @@ export default function DashboardLayoutBasic(props) {
     if (newRow.last_price) {
       try {
         const result = await axios.put(
-          `https://trash2cash-liav.onrender.com/collector/updateRequestDetailsById/${newRow.id}`,
+          `http://localhost:5000/collector/updateRequestDetailsById/${newRow.id}`,
           { last_price: newRow.last_price },
           {
             headers: {

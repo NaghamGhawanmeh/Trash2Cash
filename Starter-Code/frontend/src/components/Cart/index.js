@@ -91,7 +91,7 @@ const Cart = () => {
     const fetchDraftRequests = async () => {
       try {
         dispatch(fetchDraftRequestsStart());
-        const response = await axios.get("https://trash2cash-liav.onrender.com/user/getRequestByuserId", {
+        const response = await axios.get("http://localhost:5000/user/getRequestByuserId", {
           headers: { Authorization: `Bearer ${token}` },
         });
         
@@ -119,7 +119,7 @@ const Cart = () => {
     dispatch(createOrderStart());
     axios
       .post(
-        "https://trash2cash-liav.onrender.com/user/createOrders",
+        "http://localhost:5000/user/createOrders",
         { location, latitude, longitude },
         { headers: { Authorization: `Bearer ${token}` } }
       )

@@ -54,7 +54,7 @@ const CurrentCategory = () => {
   const createRequest = (event) => {
     axios
       .post(
-        "https://trash2cash-liav.onrender.com/user/createRequestByuserId",
+        "http://localhost:5000/user/createRequestByuserId",
         {
           category_id: state.userCategory.currentCategory.id,
           weight: request.weight || 0,
@@ -312,6 +312,32 @@ const CurrentCategory = () => {
         </div>
       </div>
 
+      {/*  {categoryNameInKg.includes(categoryName)&&
+        <div className='l1'><label for="weight">weight: <input id='
+        weight' placeholder= "weight" onChange={(e)=>{
+        setRequest({...request,weight:e.target.value})
+        }}/> Kg
+        </label></div>}
+        {categoryNameInHight.includes(categoryName)&&
+        <div className='l1'>
+        <label   for="length">length:<input maxLength ="3" minlength="1" placeholder= "length" id='length' onChange={(e)=>{
+        setRequest({...request,length:e.target.value})
+        }} />
+        M
+            </label><br/>
+        <label   for="width">width: <input id='width' maxLength ="3" minlength="1" placeholder= "width" onChange={(e)=>{
+        setRequest({...request,width:e.target.value})
+        }}/> M
+        </label><br/>
+        <label  className='l1' for="width">height: <input id='width' maxLength ="3" minlength="1" placeholder= "width" onChange={(e)=>{
+        setRequest({...request,height:e.target.value})
+        }}/> M
+        </label><br/>
+        </div>} */}
+      {/*  <br/><label  className='l1'>Description :</label><br/>
+        <textarea   className='l1' onChange={(e)=>{
+        setRequest({...request,description:e.target.value})
+        }}></textarea><br/> */}
     </div>
   );
 };

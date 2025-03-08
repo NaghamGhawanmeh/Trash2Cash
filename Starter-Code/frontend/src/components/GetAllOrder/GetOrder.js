@@ -49,7 +49,7 @@ const OrderManagementPage = () => {
   const cancelOrder = (id, index) => {
     setIsModalOpen(false);
     setShowConfirmation(false);
-    axios.put(`https://trash2cash-liav.onrender.com/user/cancelOrderById/${id}`, null, {
+    axios.put(`http://localhost:5000/user/cancelOrderById/${id}`, null, {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then((result) => {
@@ -65,7 +65,7 @@ const OrderManagementPage = () => {
   };
 
   useEffect(() => {
-    axios.get("https://trash2cash-liav.onrender.com/user/getOrderById", {
+    axios.get("http://localhost:5000/user/getOrderById", {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then((result) => {
