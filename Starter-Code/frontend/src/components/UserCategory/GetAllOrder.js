@@ -5,7 +5,7 @@ const GetAllOrder = () => {
   const state = useSelector((state)=>state)
   const token = state.authReducer.token
     useEffect(()=>{
-        axios.get("http://localhost:5000/user/getOrderById",{
+        axios.get("https://trash2cash-liav.onrender.com/user/getOrderById",{
           headers:{
             Authorization: `Bearer ${token}`
           }

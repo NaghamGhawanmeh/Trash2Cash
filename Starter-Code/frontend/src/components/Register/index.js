@@ -17,7 +17,7 @@ const Register = () => {
   const register = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/user/register", {
+      .post("https://trash2cash-liav.onrender.com/user/register", {
         first_name,
         last_name,
         email,

@@ -54,7 +54,7 @@ const CurrentCategory = () => {
   const createRequest = (event) => {
     axios
       .post(
-        "http://localhost:5000/user/createRequestByuserId",
+        "https://trash2cash-liav.onrender.com/user/createRequestByuserId",
         {
           category_id: state.userCategory.currentCategory.id,
           weight: request.weight || 0,

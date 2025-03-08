@@ -19,7 +19,7 @@
 
 //   const getAssignedOrdersById = () => {
 //     axios
-//       .get(`http://localhost:5000/user/getAssignOrderById`, {
+//       .get(`https://trash2cash-liav.onrender.com/user/getAssignOrderById`, {
 //         headers: {
 //           Authorization: `Bearer ${authToken}`,
 //         },
@@ -36,7 +36,7 @@
 //   const updateOrderDetailsById = (id) => {
 //     axios
 //       .put(
-//         `http://localhost:5000/collector/updateRequestDetailsById/${id}`,
+//         `https://trash2cash-liav.onrender.com/collector/updateRequestDetailsById/${id}`,
 //         { last_price, status },
 //         {
 //           headers: {

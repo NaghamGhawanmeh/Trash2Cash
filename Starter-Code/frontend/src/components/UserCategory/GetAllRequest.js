@@ -26,7 +26,7 @@ const updateRequest=(id,category_id)=>{
 
     console.log(id);
     
-    axios.put(`http://localhost:5000/user/updateRequestById/${id}`,{
+    axios.put(`https://trash2cash-liav.onrender.com/user/updateRequestById/${id}`,{
         "length":updatedValue.length ||null,
         "width":updatedValue.width || null,
         "height":updatedValue.height || null,
@@ -54,7 +54,7 @@ const updateRequest=(id,category_id)=>{
     const deleteRequests = (id)=>{
         console.log(id);
         
-        axios.delete(`http://localhost:5000/user/cancelRequestById/${id}`)
+        axios.delete(`https://trash2cash-liav.onrender.com/user/cancelRequestById/${id}`)
         .then((response)=>{
             console.log(response);
            /*  const newRequests = request.filter((ele,i)=>{
@@ -71,7 +71,7 @@ const updateRequest=(id,category_id)=>{
 
     }
     useEffect(()=>{
-        axios.get("http://localhost:5000/user/getRequestByuserId", {headers:{
+        axios.get("https://trash2cash-liav.onrender.com/user/getRequestByuserId", {headers:{
         Authorization: `Bearer ${token}`
         }})
         .then((result)=>{
