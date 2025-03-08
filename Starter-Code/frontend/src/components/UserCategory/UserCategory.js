@@ -15,7 +15,7 @@ const UserCategory = () => {
   console.log(currentCategory);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/category/getAllCategories")
+      .get("https://trash2cash-liav.onrender.com/category/getAllCategories")
       .then((result) => {
         console.log(result.data.Categories);
         setAllCategories(result.data.Categories);
